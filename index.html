@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jogo da Velha</h1>
+        </header>
+        <main>
+            <button id="singleplayer-btn" class="menu-button" onclick="startSingleplayer()">
+                <span>🧑‍💻</span> Um Jogador
+            </button>
+            <button id="multiplayer-btn" class="menu-button" onclick="startMultiplayer()">
+                <span>👥</span> Multijogador
+            </button>
+            <button  id="history-btn" class="menu-button" onclick="viewHistory()">
+                <span>📊</span> Histórico de Partidas
+            </button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

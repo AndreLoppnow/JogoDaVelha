@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo da tela */
+body {
+    background-color: #f0f0f5; /* Cor de fundo suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    background-color: #ff7f27;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Espaçamento para não sobrepor o cabeçalho */
+main {
+    margin-top: 100px; /* Ajusta o espaço entre o cabeçalho e os botões */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Espaçamento entre os botões */
+}
+
+/* Botões do menu */
+.menu-button {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffa74d;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.menu-button span {
+    font-size: 1.5em;
+}
+
+/* Efeito ao passar o mouse */
+.menu-button:hover {
+    background-color: #ff8c42;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    body {
+        justify-content: flex-start;
+    }
+    main {
+        margin-top: 150px;
+    }
+}
