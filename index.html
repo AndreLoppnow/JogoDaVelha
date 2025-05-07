@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Jogo da Velha</h1>
-        </header>
-        <main>
-            <button id="singleplayer-btn" class="menu-button" onclick="startSingleplayer()">
-                <span>🧑‍💻</span> Um Jogador
-            </button>
-            <button id="multiplayer-btn" class="menu-button" onclick="startMultiplayer()">
-                <span>👥</span> Multijogador
-            </button>
-            <button  id="history-btn" class="menu-button" onclick="viewHistory()">
-                <span>📊</span> Histórico de Partidas
-            </button>
-        </main>
+    <div id="tela-inicial">
+        <h1>Jogo da Velha</h1>
+        <div class="botoes-iniciais">
+            <button id="um-jogador">Um Jogador</button>
+            <button id="multijogador">Multijogador</button>
+            <button id="historico">Histórico de Partidas</button>
+        </div>
     </div>
+
+    <div id="tela-jogo" style="display: none;">
+        <h2 id="jogador-atual"></h2>
+        <div id="tabuleiro">
+            <div class="casa" data-index="0"></div>
+            <div class="casa" data-index="1"></div>
+            <div class="casa" data-index="2"></div>
+            <div class="casa" data-index="3"></div>
+            <div class="casa" data-index="4"></div>
+            <div class="casa" data-index="5"></div>
+            <div class="casa" data-index="6"></div>
+            <div class="casa" data-index="7"></div>
+            <div class="casa" data-index="8"></div>
+        </div>
+        <button id="voltar-inicial">Voltar ao Início</button>
+    </div>
+
+    <div id="tela-historico" style="display: none;">
+        <h2>Histórico de Partidas</h2>
+        <ul id="lista-historico"></ul>
+        <button id="voltar-inicial-historico">Voltar ao Início</button>
+    </div>
+
+    <div id="modal-vencedor" class="modal">
+        <div class="modal-conteudo">
+            <h2 id="mensagem-vencedor"></h2>
+            <button id="jogar-novamente">Jogar Novamente</button>
+            <button id="sair">Sair</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
