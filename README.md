@@ -1,6 +1,9 @@
 ## ✅ Objetivo
 Desenvolver uma aplicação que seja responsiva usando HTML, CSS e JavaScript, projeto de um jogo da velha.
 
+## 📊 Status
+![Static Badge](https://img.shields.io/badge/STATUS_DO_PROJETO-CONCLU%C3%8DDO-YELLOW?)
+
 ## 👨‍💻 Tecnologias Usadas
 <div align="center" text-aling="center">
     <table>
